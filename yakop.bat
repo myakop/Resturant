@@ -1,0 +1,1 @@
+java--module-path "C:\javafx-sdk-16\lib" --add-modules javafx.controls,javafx.fxml --add-modules javafx.controls,javafx.media - jar 7th1.jar

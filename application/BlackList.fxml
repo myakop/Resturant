@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AddBlacklistController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/delet.jpg" />
+         </image>
+      </ImageView>
+      <ComboBox fx:id="customer" layoutX="181.0" layoutY="70.0" prefWidth="150.0" promptText="customer" />
+      <ListView fx:id="black" layoutX="181.0" layoutY="156.0" prefHeight="174.0" prefWidth="214.0" />
+      <Button layoutX="322.0" layoutY="111.0" mnemonicParsing="false" onAction="#Add" text="submit" />
+      <Button layoutX="35.0" layoutY="22.0" mnemonicParsing="false" onAction="#Back" text="&lt;-Back" />
+   </children>
+</AnchorPane>

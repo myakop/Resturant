@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.oldorderscustomecontroller">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/ordeeeer.jpg" />
+         </image>
+      </ImageView>
+      <ListView fx:id="list" layoutX="123.0" layoutY="42.0" prefHeight="200.0" prefWidth="308.0" />
+      <Button layoutX="117.0" layoutY="251.0" mnemonicParsing="false" onAction="#replaceorder" prefHeight="30.0" prefWidth="157.0" text="replace order">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font></Button>
+      <Button layoutX="288.0" layoutY="252.0" mnemonicParsing="false" onAction="#gotoorders" prefHeight="30.0" prefWidth="157.0" text="create new order">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font></Button>
+      <Button layoutX="24.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" prefHeight="26.0" prefWidth="46.0" text="back" />
+   </children>
+</AnchorPane>

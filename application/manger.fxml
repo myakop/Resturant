@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="pane2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="451.0" prefWidth="596.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.mangercontroller">
+   <center>
+      <AnchorPane prefHeight="440.0" prefWidth="570.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="496.0" fitWidth="596.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/javamanger.jpeg" />
+               </image>
+            </ImageView>
+            <Button layoutX="40.0" layoutY="116.0" mnemonicParsing="false" onAction="#addbymanger" prefHeight="75.0" prefWidth="180.0" text="ADD" />
+            <Button layoutX="307.0" layoutY="118.0" mnemonicParsing="false" onAction="#gotoquey" prefHeight="75.0" prefWidth="180.0" text="QUER" />
+            <Button layoutX="40.0" layoutY="211.0" mnemonicParsing="false" onAction="#goremove" prefHeight="75.0" prefWidth="180.0" text="REMOVE" />
+            <Button layoutX="307.0" layoutY="211.0" mnemonicParsing="false" onAction="#goedit" prefHeight="75.0" prefWidth="180.0" text="edit" />
+            <Button layoutX="204.0" layoutY="312.0" mnemonicParsing="false" onAction="#logout" prefHeight="31.0" prefWidth="137.0" text="log out" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

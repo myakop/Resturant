@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.editContoller">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/edit.png" />
+         </image>
+      </ImageView>
+      <ComboBox fx:id="customer" layoutX="34.0" layoutY="63.0" onAction="#goeditcustomer" prefHeight="40.0" prefWidth="150.0" promptText="customer">
+         <cursor>
+            <Cursor fx:constant="NONE" />
+         </cursor></ComboBox>
+      <ComboBox fx:id="component" layoutX="34.0" layoutY="138.0" onAction="#goeditcomp" prefHeight="40.0" prefWidth="150.0" promptText="Component" />
+      <ComboBox fx:id="delivery" layoutX="34.0" layoutY="217.0" onAction="#goeditdelivery" prefHeight="40.0" prefWidth="150.0" promptText="delivery" />
+      <ComboBox fx:id="dish" layoutX="271.0" layoutY="63.0" onAction="#goeditdish" prefHeight="40.0" prefWidth="150.0" promptText="dish" />
+      <ComboBox fx:id="order" layoutX="271.0" layoutY="217.0" onAction="#goeditorder" prefHeight="40.0" prefWidth="150.0" promptText="order" />
+      <ComboBox fx:id="devperson" layoutX="271.0" layoutY="289.0" onAction="#goeditdevperson" prefHeight="40.0" prefWidth="150.0" promptText="deliveryperson" />
+      <ComboBox fx:id="cook" layoutX="271.0" layoutY="138.0" onAction="#goeditcook" prefHeight="40.0" prefWidth="150.0" promptText="cook" />
+      <ComboBox fx:id="devarea" layoutX="34.0" layoutY="289.0" onAction="#goeditarea" prefHeight="40.0" prefWidth="150.0" promptText="deliveryarea" />
+      <Label layoutX="422.0" layoutY="91.0" prefHeight="238.0" prefWidth="162.0" text="Edit" textAlignment="CENTER">
+         <font>
+            <Font size="85.0" />
+         </font>
+      </Label>
+      <Button layoutX="21.0" layoutY="14.0" mnemonicParsing="false" onAction="#Back" text="Back" />
+   </children>
+</AnchorPane>

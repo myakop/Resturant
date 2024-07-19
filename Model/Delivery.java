@@ -1,0 +1,116 @@
+package Model;
+
+import java.io.Serializable;
+import java.time.LocalDate;
+
+
+public abstract class  Delivery implements Serializable {/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+// abstract class
+	private static int idCounter = 1;
+	private int id;
+	
+	private DeliveryPerson deliveryPerson;
+	private DeliveryArea area;
+	private boolean isDelivered;
+	private LocalDate dateofdelivery;
+	
+	public Delivery( DeliveryPerson deliveryPerson, DeliveryArea area,
+			boolean isDelivered ,LocalDate date) {
+		super();
+		this.id = idCounter++;
+		
+		this.deliveryPerson = deliveryPerson;
+		this.area = area;
+		this.isDelivered = isDelivered;
+		this.dateofdelivery=date;
+	}
+	
+	public Delivery(int id) {
+		this.id = id;
+	}
+
+	public static int getIdCounter() {
+		return idCounter;
+	}
+
+	public static void setIdCounter(int idCounter) {
+		Delivery.idCounter = idCounter;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public DeliveryPerson getDeliveryPerson() {
+		return deliveryPerson;
+	}
+
+	public void setDeliveryPerson(DeliveryPerson deliveryPerson) {
+		this.deliveryPerson = deliveryPerson;
+	}
+
+	public DeliveryArea getArea() {
+		return area;
+	}
+
+	public void setArea(DeliveryArea area) {
+		this.area = area;
+	}
+
+	public boolean isDelivered() {
+		return isDelivered;
+	}
+
+	public void setDelivered(boolean isDelivered) {
+		this.isDelivered = isDelivered;
+	}
+	public LocalDate getDateofdelivery() {
+		return dateofdelivery;
+	}
+
+	public void setDateofdelivery(LocalDate dateofdelivery) {
+		this.dateofdelivery = dateofdelivery;
+	}
+
+	@Override
+	public String toString() {
+		return "Delivery [id=" + id + ", deliveryPerson=" + deliveryPerson + ", area=" + area + ", isDelivered="
+				+ isDelivered + "]";
+	}
+	
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + id;
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Delivery other = (Delivery) obj;
+		if (id != other.id)
+			return false;
+		return true;
+	}
+	
+	
+	
+	
+	
+	
+}

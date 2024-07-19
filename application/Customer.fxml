@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CustomerController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/customer.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="60.0" layoutY="84.0" prefHeight="316.0" prefWidth="463.0" style="-fx-background-color: #ffffff67; -fx-background-radius: 70px;">
+         <children>
+            <Button layoutX="158.0" layoutY="274.0" mnemonicParsing="false" onAction="#logout" prefHeight="34.0" prefWidth="180.0" text="log out">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Button layoutX="92.0" layoutY="109.0" mnemonicParsing="false" onAction="#gotomenu" prefHeight="75.0" prefWidth="180.0" text="view menu">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font></Button>
+      <Button layoutX="324.0" layoutY="109.0" mnemonicParsing="false" onAction="#gotoedit" prefHeight="75.0" prefWidth="180.0" text="edit details" textFill="#2e2121">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font></Button>
+      <Button layoutX="110.0" layoutY="255.0" mnemonicParsing="false" onAction="#gotoorders" prefHeight="75.0" prefWidth="180.0" text="new order">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font></Button>
+      <Button layoutX="324.0" layoutY="255.0" mnemonicParsing="false" onAction="#goquery" prefHeight="75.0" prefWidth="180.0" text="query">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font></Button>
+      <Label fx:id="welcome" layoutX="14.0" layoutY="14.0" prefHeight="51.0" prefWidth="451.0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
